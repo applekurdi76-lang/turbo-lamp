@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ckb" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>پڕۆفایلی کەسی - [ناوی تۆ]</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rabar&display=swap');
 
@@ -15,32 +16,42 @@
             /* پاشخانێکی gradientی جووڵاو */
             background: linear-gradient(135deg, #a8dadc, #457b9d, #1d3557);
             background-size: 200% 200%;
-            animation: gradientShift 15s ease infinite alternate; /* جووڵاندنی هێواشی gradient */
+            animation: gradientShift 15s ease infinite alternate;
+            /* جووڵاندنی هێواشی gradient */
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
             font-family: 'Rabar', Tahoma, sans-serif;
-            direction: rtl; 
+            direction: rtl;
             text-align: right;
             padding: 20px;
         }
 
         /* کاریگەری جووڵەی پاشخان */
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
         }
 
         /* ستاێلی پڕۆفایل کارد (Glassmorphism) */
         .profile-card {
-            background: rgba(255, 255, 255, 0.15); /* ڕوونی کەم */
+            background: rgba(255, 255, 255, 0.15);
+            /* ڕوونی کەم */
             padding: 40px;
             border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.3); /* سنوورێکی سپی کاڵ */
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* سێبەر بۆ قووڵی */
-            backdrop-filter: blur(10px); /* کاریگەری شووشەی ڕوون */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            /* سنوورێکی سپی کاڵ */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            /* سێبەر بۆ قووڵی */
+            backdrop-filter: blur(10px);
+            /* کاریگەری شووشەی ڕوون */
             -webkit-backdrop-filter: blur(10px);
             max-width: 450px;
             width: 100%;
@@ -57,12 +68,12 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
-            border: 5px solid #a8dadc; 
-            box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5); 
+            border: 5px solid #a8dadc;
+            box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5);
         }
 
         h1 {
-            color: #f1faee; 
+            color: #f1faee;
             margin-bottom: 5px;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
         }
@@ -103,10 +114,23 @@
         }
 
         /* ڕەنگەکان */
-        .facebook { background-color: #1877f2; }
-        .instagram { background-color: #E4405F; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        .tiktok { background-color: #000000; }
-        .snapchat { background-color: #FFFC00; color: #333; }
+        .facebook {
+            background-color: #1877f2;
+        }
+
+        .instagram {
+            background-color: #E4405F;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        .tiktok {
+            background-color: #000000;
+        }
+
+        .snapchat {
+            background-color: #FFFC00;
+            color: #333;
+        }
 
         /* کاریگەری ڕووناکی (Shine Effect) */
         .social-btn::after {
@@ -122,26 +146,27 @@
         }
 
         .social-btn:hover::after {
-            left: 120%; /* جووڵاندنی کاریگەری ڕووناکی */
+            left: 120%;
+            /* جووڵاندنی کاریگەری ڕووناکی */
         }
 
         /* کاریگەری کاتێک ماوس دەچێتە سەر دوگمەکە (Hover Effect) */
         .social-btn:hover {
-            transform: translateY(-8px) scale(1.02); 
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); 
-            filter: brightness(110%); 
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            filter: brightness(110%);
         }
 
         /* کاریگەری کاتێک کلیک لە دوگمەکە دەکرێت (Active Effect) */
         .social-btn:active {
-            transform: translateY(-2px) scale(0.98); 
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
-            filter: brightness(90%); 
+            transform: translateY(-2px) scale(0.98);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            filter: brightness(90%);
         }
 
         /* ستاێلی تایبەت بۆ سناپچات */
         .snapchat:active {
-            filter: brightness(80%); 
+            filter: brightness(80%);
         }
 
         .footer-note {
@@ -157,6 +182,7 @@
                 padding: 30px 20px;
                 border-radius: 20px;
             }
+
             .social-btn {
                 padding: 15px;
                 font-size: 16px;
@@ -164,43 +190,46 @@
         }
     </style>
 </head>
+
 <body>
     <div class="profile-card">
         <div class="profile-header">
-            <img src="https://via.placeholder.com/160/a8dadc/1d3557?text=Your+Photo" alt="وێنەی پڕۆفایل" class="profile-img">
-            <h1>ناوی پڕۆفایلەکەت</h1>
-            <p>بەخێربێن بۆ جیهانی من! لێرە دەتوانیت گشت ئەکاونتە فەرمییەکانم فۆڵۆو بکەیت.</p>
+            <img src="ibrahim.png" alt="وێنەی پڕۆفایل"
+                class="profile-img">
+            <h1>ibrahim rekani</h1>
+            <p>folow me on social media</p>
         </div>
-        
+
         <div class="social-links">
-            <button class="social-btn facebook" data-url="https://www.facebook.com/your_profile_link">
-                <i class="fab fa-facebook-f"></i> فەیسبووک
+            <button class="social-btn facebook" data-url="https://www.facebook.com/share/17pcDfjTiu/">
+                <i class="fab fa-facebook-f"></i> facebook
             </button>
-            
-            <button class="social-btn instagram" data-url="https://www.instagram.com/your_profile_link">
-                <i class="fab fa-instagram"></i> ئینستاگرام
+            <button class="social-btn instagram"
+                data-url="https://www.instagram.com/hneshi.1999?igsh=MWZlMjNvbm9ucnQ5Yg==">
+                <i class="fab fa-instagram"></i> instagram
             </button>
-            
-            <button class="social-btn tiktok" data-url="https://www.tiktok.com/@your_profile_link">
-                <i class="fab fa-tiktok"></i> تیکتۆک
+
+            <button class="social-btn tiktok" data-url="https://www.tiktok.com/@1br4h1m_rek4n1?_r=1&_t=ZS-91c9flGLBVh">
+                <i class="fab fa-tiktok"></i> tiktok
             </button>
-            
-            <button class="social-btn snapchat" data-url="https://www.snapchat.com/add/your_profile_link">
-                <i class="fab fa-snapchat-ghost"></i> سناپچات
+
+            <button class="social-btn snapchat"
+                data-url="https://www.snapchat.com/add/ibrahimkhal2549?share_id=Q5H8DMMdbcw&locale=ar-EG">
+                <i class="fab fa-snapchat-ghost"></i> snapchat
             </button>
         </div>
-        
-        <p class="footer-note">دروستکراوە بە خۆشەویستی ❤️</p>
+
+        <p class="footer-note">good lucky</p>
     </div>
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const socialButtons = document.querySelectorAll('.social-btn');
 
             socialButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const url = this.getAttribute('data-url');
-                    
+
                     if (url && url.startsWith('http')) {
                         // کردنەوەی لینکەکە لە پەنجەرەیەکی نوێدا
                         window.open(url, '_blank');
@@ -212,4 +241,5 @@
         });
     </script>
 </body>
+
 </html>
